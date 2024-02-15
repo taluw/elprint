@@ -27,3 +27,12 @@ def contact(request):
     }
 
     return render(request, 'main/contact.html', context)    
+
+def shipay(request):
+    context = {
+        'title': 'Home - Доставка и оплата',
+        'content': 'Доставка и оплата',
+        'text_on_page': "Такси заказывали"
+    }
+
+    return render(request, 'main/shipay.html', context)    

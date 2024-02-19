@@ -1,0 +1,170 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "a Attack on Titan 01",
+            "slug": "a-attack-on-titan-01",
+            "description": "a Attack on Titan 01.jpg",
+            "image": "",
+            "price": "20.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "a Chainsaw Man 02.jpg",
+            "slug": "a-chainsaw-man-02jpg",
+            "description": "a Chainsaw Man 02.jpg",
+            "image": "",
+            "price": "30.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "a Frieren 05.jpg",
+            "slug": "a-frieren-05jpg",
+            "description": "a Frieren 05.jpg",
+            "image": "",
+            "price": "50.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "a Kimetsu no Yaiba 11.jpg",
+            "slug": "a-kimetsu-no-yaiba-11jpg",
+            "description": "a Kimetsu no Yaiba 11.jpg",
+            "image": "",
+            "price": "10.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "a Attack on Titan 06.jpg",
+            "slug": "a-attack-on-titan-06jpg",
+            "description": "a Attack on Titan 06.jpg",
+            "image": "",
+            "price": "50.00",
+            "discount": "0.00",
+            "quantity": 3,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "a Chainsaw man Aki 01.jpg",
+            "slug": "a-chainsaw-man-aki-01jpg",
+            "description": "a Chainsaw man Aki 01.jpg",
+            "image": "",
+            "price": "55.00",
+            "discount": "0.00",
+            "quantity": 2,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "a Ghibli 02.jpg",
+            "slug": "a-ghibli-02jpg",
+            "description": "a Ghibli 02.jpg",
+            "image": "",
+            "price": "60.00",
+            "discount": "0.00",
+            "quantity": 4,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "a Kimetsu no Yaiba 07.jpg",
+            "slug": "a-kimetsu-no-yaiba-07jpg",
+            "description": "a Kimetsu no Yaiba 07.jpg",
+            "image": "",
+            "price": "20.00",
+            "discount": "0.00",
+            "quantity": 3,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "Genshin 07.jpg",
+            "slug": "genshin-07jpg",
+            "description": "Genshin 07.jpg",
+            "image": "",
+            "price": "100.00",
+            "discount": "0.00",
+            "quantity": 3,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "Genshin 54.jpg",
+            "slug": "genshin-54jpg",
+            "description": "Genshin 54.jpg",
+            "image": "",
+            "price": "220.00",
+            "discount": "0.00",
+            "quantity": 3,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 11,
+        "fields": {
+            "name": "Genshin ship ТартаЛи 20.jpg",
+            "slug": "genshin-ship-tartali-20jpg",
+            "description": "Genshin ship ТартаЛи 20.jpg",
+            "image": "",
+            "price": "333.00",
+            "discount": "0.00",
+            "quantity": 3,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 12,
+        "fields": {
+            "name": "Genshin Навия 03.jpg",
+            "slug": "genshin-naviya-03jpg",
+            "description": "Genshin Навия 03.jpg",
+            "image": "",
+            "price": "110.00",
+            "discount": "0.00",
+            "quantity": 1,
+            "category": 9
+        }
+    }
+]

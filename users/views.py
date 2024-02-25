@@ -3,7 +3,6 @@ from django.contrib import auth, messages
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.urls import reverse
-from traitlets import Instance
 
 from users.forms import ProfileForm, UserLoginForm, UserRegistrationForm
 
@@ -18,6 +17,10 @@ def login(request):
             if user:
                 auth.login(request, user)
                 messages.success(request, f"Успешный вход в аккаунт {username}")
+
+                if request.POST.get('next', None):
+                    return HttpResponseRedirect(request.POST.get('next'))
+
                 return HttpResponseRedirect(reverse('main:index'))
     else:
         form = UserLoginForm()

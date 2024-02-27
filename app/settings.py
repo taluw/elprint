@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-from django.conf.global_settings import AUTH_USER_MODEL, LOGIN_URL
 
 from django.http import HttpResponseNotFound
 
@@ -154,4 +153,4 @@ INTERNAL_IPS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
-LOGIN_URL = '/user/login/'
+LOGIN_URL = '/user/login/' #я в рот ебал блять этот редирект неработающий сука

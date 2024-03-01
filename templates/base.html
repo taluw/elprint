@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static "deps/css/my_css.css" %}">
     <!-- Стиль footer-a для главной страницы -->
     {% block css %}
+
     {% endblock %}
     <!-- Favicons for different platforms -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static "deps/favicon/apple-touch-icon.png" %}">
@@ -123,7 +124,7 @@
     {% block footer %}{% endblock %}
 
     <script src="{% static "deps/js/jquery/jquery-3.7.0.min.js" %}"></script>
-    <script src="{% static "deps/js/jquery-events.js" %}"></script>
+    {% comment %} <script src="{% static "deps/js/jquery-events.js" %}"></script> разобраться с этой хуйней{% endcomment %}
     <script src="{% static "deps/js/jquery-ajax.js" %}"></script>
     <script src="{% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}"></script>
 </body>

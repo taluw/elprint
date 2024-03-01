@@ -6,6 +6,7 @@
 {% include "includes/cart_button.html" %}
 {% endblock  %}
 
+
 {% block  content %}
 <div class="row">
     <!-- Форма фильтров -->
@@ -85,8 +86,9 @@
                         {% else %}
                             <p><strong>{{ product.price }}</strong> RUB</p>
                         {% endif %}
-
-                        <a href="{% url "cart:cart_add" product.slug %}" class="btn add-to-cart">
+                        <a href="{% url "cart:cart_add" %}" class="btn add-to-cart"
+                        data-product-id="{{ product.id }}">
+                            {% csrf_token %}
                             <img class="mx-1" src="{% static "/deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
                                 width="32" height="32">
                         </a>
@@ -107,11 +109,6 @@
                     <a class="page-link" href="{% if goods.has_previous %}?{% change_params page=goods.previous_page_number %}{% else %}
                     #{% endif %}">Назад</a>
                 </li>
-                {% comment %} Я БЛЯДЬ ЧАС ЕБАЛСЯ С ОШИБКОЙ ПАГИНАЦИИ, А ОКАЗАЛОСЬ
-                ЧТО Я ПРОСТО
-                НАХУЙ
-                ВМЕСТО НАМБЕР НАПИСАЛ НАБМЕР
-                Я ТОГО ВСЕ {% endcomment %}
                 {% for page in goods.paginator.page_range %}
                 {% if page >= goods.number|add:-2 and page <= goods.number|add:2 %}
                     <li class="page-item {% if goods.number == page %} active {% endif %}">
@@ -137,5 +134,3 @@
     </div>
 </footer>
 {% endblock %}
-
-<!-- https://www.youtube.com/watch?v=EzNGVv0HIvY  -->

@@ -49,25 +49,25 @@
                                 {% endif %}
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="delivery" class="form-label">Способ доставки: </label>
+                            <label for="delievery" class="form-label">Способ доставки: </label>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="requires_delivery"
-                                    id="id_requires_delivery" value="1" checked>
-                                <label class="form-check-label" for="id_requires_delivery">Нужна
+                                <input class="form-check-input" type="radio" name="requires_delievery"
+                                    id="id_requires_delievery" value="1" checked>
+                                <label class="form-check-label" for="id_requires_delievery">Нужна
                                     доставка</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="requires_delivery"
-                                    id="id_requires_delivery" value="0">
-                                <label class="form-check-label" for="id_requires_delivery">Самовывоз</label>
+                                <input class="form-check-input" type="radio" name="requires_delievery"
+                                    id="id_requires_delievery" value="0">
+                                <label class="form-check-label" for="id_requires_delievery">Самовывоз</label>
                             </div>
                         </div>
-                        <div class="mb-3" id="deliveryAddressField">
-                            <label for="id_delivery_address" class="form-label">Адрес
+                        <div class="mb-3" id="delieveryAddressField">
+                            <label for="id_delievery_address" class="form-label">Адрес
                                 доставки*:</label>
-                            <textarea class="form-control" id="id_delivery_address"
+                            <textarea class="form-control" id="id_delievery_address"
                                 value="{% if form.delievery_address.value %}{{ form.delievery_address.value }}{% endif %}"
-                                name="delivery_address" rows="2"></textarea>
+                                name="delievery_address" rows="2"></textarea>
                                 {% if form.delievery_address.errors %}
                                     <div class="alert alert-danger alert-dismissible fade show">{{ form.delievery_address.errors }}</div>
                                 {% endif %}
@@ -85,6 +85,9 @@
                                     id="id_payment_on_get" value="1">
                                 <label class="form-check-label" for="id_payment_on_get">Наличными/картой
                                     при получении</label>
+                                    {% if form.payment_on_get.errors %}
+                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.payment_on_get.errors }}</div>
+                                    {% endif %}
                             </div>
                         </div>
                     </div>

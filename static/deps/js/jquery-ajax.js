@@ -201,13 +201,13 @@ $(document).ready(function () {
     });
 
     // Обработчик события радиокнопки выбора способа доставки
-    $("input[name='requires_delivery']").change(function () {
+    $("input[name='requires_delievery']").change(function () {
         var selectedValue = $(this).val();
         // Скрываем или отображаем input ввода адреса доставки
         if (selectedValue === "1") {
-            $("#deliveryAddressField").show();
+            $("#delieveryAddressField").show();
         } else {
-            $("#deliveryAddressField").hide();
+            $("#delieveryAddressField").hide();
         }
     });
 });
